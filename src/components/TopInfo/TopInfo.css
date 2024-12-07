@@ -1,0 +1,17 @@
+.top-info {
+
+   position: relative;
+   z-index: 100;
+
+   padding: 8px 0 7px;
+
+   background: #5a6d57;
+
+   font-family: "Montserrat";
+   font-weight: 600;
+   font-size: 12px;
+   letter-spacing: 0.07em;
+   text-align: center;
+   color: #fff;
+   text-transform: capitalize;
+}

@@ -1,0 +1,41 @@
+.product-page {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.product-page__title {
+  width: 500px;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.product-page__img {
+  width: 200px;
+  height: 250px;
+}
+
+.product-page__description {
+  width: 600px;
+  font-size: 18px;
+}
+
+.product-page__price {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.product-page__links {
+  display: flex;
+  gap: 30px;
+}
+
+.product-page__link {
+  padding: 20px;
+  border-radius: 30px;
+  border: solid 2px black;
+}

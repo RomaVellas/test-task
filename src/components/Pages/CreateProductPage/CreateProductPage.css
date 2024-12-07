@@ -1,0 +1,19 @@
+.create-product__form {
+  margin-top: 40px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.create-product__input {
+  padding: 10px;
+  border: 0.5px solid black;
+}
+
+.create-product__btn {
+  padding: 20px;
+  border-radius: 30px;
+  border: solid 2px black;
+}

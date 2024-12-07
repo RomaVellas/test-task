@@ -1,0 +1,194 @@
+.header {
+	position: relative;
+	z-index: 100;
+
+	background-color: #fff;
+
+	padding: 16px 0 18px;
+
+}
+
+.header__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__nav-btn {
+	display: none;
+}
+
+.header__logo {
+	flex-shrink: 0;
+}
+
+.header__nav {
+	margin-left: auto;
+}
+
+.header__account--first {
+	margin-left: auto;
+	margin-right: 24px;
+}
+
+.nav {
+	font-family: "Montserrat";
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 180%;
+	text-transform: capitalize;
+	text-align: center;
+	color: var(--neutral-gray404040);
+}
+
+.nav__list {
+	display: flex;
+	column-gap: 30px;
+
+}
+
+.nav__list a {
+   color: var(--neutral-gray404040);
+}
+
+.nav__list a.active {
+   color: #000;
+}
+
+/* Nav Icon */
+.mobile-nav-btn {
+	--time: 0.1s;
+
+	--width: 18px;
+	--height: 12px;
+
+	--line-height: 2px;
+	--spacing: 2px;
+
+	--color: #0c0c0c;
+	--radius: 0px;
+
+	/* Fixed height and width */
+	/* height: var(--height); */
+	/* width: var(--width); */
+
+	/* Dynamic height and width */
+	height: calc(var(--line-height) * 3 + var(--spacing) * 2);
+	width: var(--width);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-icon {
+	position: relative;
+	width: var(--width);
+	height: var(--line-height);
+	background-color: var(--color);
+	border-radius: var(--radius);
+}
+
+.nav-icon::before,
+.nav-icon::after {
+	content: '';
+	display: block;
+
+	position: absolute;
+	left: 0;
+
+	width: var(--width);
+	height: var(--line-height);
+
+	border-radius: var(--radius);
+	background-color: var(--color);
+	transition: transform var(--time) ease-in,
+		top var(--time) linear var(--time);
+}
+
+.nav-icon::before {
+	/* top: calc(var(--line-height) * -2); */
+	top: calc(-1 * (var(--line-height) + var(--spacing)));
+}
+
+.nav-icon::after {
+	/* top: calc(var(--line-height) * 2); */
+	top: calc(var(--line-height) + var(--spacing));
+}
+
+.nav-icon.nav-icon--active {
+	background-color: transparent;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+	top: 0;
+	transition: top var(--time) linear,
+		transform var(--time) ease-in var(--time);
+}
+
+.nav-icon.nav-icon--active::before {
+	transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+	transform: rotate(-45deg);
+}
+
+/* Layout */
+
+.mobile-nav-btn {
+	z-index: 999;
+	display: none;
+}
+
+.icons-wrapper {
+	padding: 30px 0;
+	display: flex;
+	column-gap: 30px;
+}
+
+.icon {
+	padding: 3px;
+	fill: transparent;
+	stroke: transparent;
+	width: 24px;
+	height: 24px;
+}
+
+.icon--search {
+	fill: #0C0C0C;
+}
+
+.icon--favorite {
+	fill: #0C0C0C;
+}
+
+.icon--bag {
+	fill: #0C0C0C;
+}
+
+.icon--person {
+	fill: #0C0C0C;
+}
+
+.account {
+   display: flex;
+   align-items: center;
+   gap: 24px;
+
+}
+
+.account a {
+   display: inline-block;
+   transition: all 0.2s ease-in;
+}
+
+.account a:hover {
+   background: var(--neutral-grayededed);
+	border-radius: 10px;
+}
+
+.account__menu {
+	display: none;
+}

@@ -1,0 +1,19 @@
+.footer {
+	padding: 24px 0;
+	margin-top: 88px;
+	min-width: 100%;
+
+	background-color: hsl(0, 0%, 0%);
+
+	flex: 0 0 auto;
+
+}
+
+.footer__copyright {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 180%;
+	text-transform: capitalize;
+	color: var(--neutral-graycbcbcb);
+}

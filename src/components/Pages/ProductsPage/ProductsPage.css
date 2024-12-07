@@ -1,0 +1,30 @@
+.products {
+  margin: 40px 40px 40px 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.products__filter-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.products__btn-get-all-products,
+.products__btn-get-liked-products {
+  padding: 20px;
+  border-radius: 30px;
+  border: solid 2px black;
+}
+
+.products__create-product {
+  margin-left: 120px;
+  width: 300px;
+
+  padding: 20px;
+  border-radius: 30px;
+  border: solid 2px black;
+}
